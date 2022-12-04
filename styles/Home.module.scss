@@ -1,0 +1,39 @@
+.centerPage {
+  @apply absolute top-1/2 left-1/2;
+  @apply -translate-x-1/2 -translate-y-1/2;
+  @apply text-center;
+}
+
+.loginForm {
+  @apply container mx-auto;
+  .formGroup {
+    @apply flex flex-col mx-auto;
+    * {
+      @apply mt-5 w-80;
+    }
+    .formControl {
+      @apply text-white;
+      @apply bg-login-gray;
+      @apply p-4 rounded-xl;
+    }
+  }
+  .formFooter {
+    @apply font-montserrat font-medium text-sm;
+    @apply flex gap-2 mx-auto;
+    @apply justify-between;
+    .formCheckBox {
+      @apply bg-login-gray;
+      @apply rounded-sm;
+    }
+    .formForgotPass {
+      @apply text-login-green;
+      @apply hover:underline;
+    }
+  }
+  .formButton {
+    @apply flex justify-evenly w-full;
+    @apply bg-login-green rounded-xl transition duration-300;
+    @apply hover:bg-green-500;
+    @apply mx-auto p-3 mt-5;
+  }
+}
